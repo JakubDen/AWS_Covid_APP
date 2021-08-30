@@ -1,0 +1,29 @@
+service: serverless-flask
+plugins:
+  - serverless-python-requirements
+  - serverless-wsgi
+custom:
+  wsgi:
+    app: app.app
+  packRequirements: false
+  pythonRequirements:
+    dockerizePip: non-linux
+provider:
+  name: aws
+  runtime: python3.6
+  stage: dev
+  region: us-east-2
+  environment:
+    S3_BUCKET: s3buckecior 
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:*
+      Resource: ["arn:aws:s3:::${self:provider.environment.S3_BUCKET}/*"]
+
+functions:
+  app:
+    handler: wsgi_handler.handler
+    events:
+      - http: ANY /
+      - http: 'ANY /{proxy+}'
