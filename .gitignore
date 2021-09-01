@@ -1,0 +1,7 @@
+__pycache__
+wsgi_handler.py
+venv
+serverless_wsgi.py
+.serverless
+node_modules
+Images

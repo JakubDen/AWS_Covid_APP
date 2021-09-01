@@ -25,14 +25,14 @@ def get_data():
             encoded_data_row=json.dumps(row) + '\n'
             json_string+=encoded_data_row
         json_string_encoded=json_string.encode('utf-8')
-        s3client=s3_client.put_object(Bucket=S3_BUCKET,Key='Data/data.json',Body=json_string_encoded)
+        #s3client=s3_client.put_object(Bucket=S3_BUCKET,Key='Data/data.json',Body=json_string_encoded)
     except ClientError as error:
         raise error
-    return 'Success',200
+    return json_string_encoded,200
 
 filters = [
     f"areaType={ areaType }",
-    f"areaName={ areaName }",
+    #f"areaName={ areaName }",
     #f"date={ date }",
     #f"areaCode={ areaCode }"
 ]
