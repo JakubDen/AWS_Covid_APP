@@ -306,5 +306,5 @@ Lambda is a compute service that lets you run code without provisioning or manag
 Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL.
 ## AWS IAM
 AWS Identity and Access Management (IAM) enables you to manage access to AWS services and resources securely. Using IAM, you can create and manage AWS users and groups, and use permissions to allow and deny their access to AWS resources. IAM is a feature of your AWS account offered at no additional charge.
-
-
+## Tableau 
+Tableau is a visual analytics platform transforming the way we use data to solve problems—empowering people and organizations to make the most of their data.

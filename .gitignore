@@ -2,5 +2,7 @@ __pycache__
 wsgi_handler.py
 venv
 serverless_wsgi.py
-.serverless
+.serverless*
 node_modules
+package-lock.json
+package.json
