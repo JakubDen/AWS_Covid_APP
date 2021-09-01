@@ -4,4 +4,3 @@ venv
 serverless_wsgi.py
 .serverless
 node_modules
-Images
