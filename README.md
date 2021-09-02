@@ -281,7 +281,7 @@ AWSGlueServiceRole-GlueRole
 ## 12. Create and Publish raport
 - Create a story raport from this data,
 - When you end the raport select the story
-- Select server at the top > Tableau Public > Save to Tableau Public
+- Server > Tableau Public > Save to Tableau Public
 - Save your data source to your system, the file looks like:
 ![](Images/datajson.png)
 - Save to Tableau Public again
